@@ -12,6 +12,8 @@
 		52B10B191E8C975700284AA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52B10B171E8C975700284AA6 /* Main.storyboard */; };
 		52B10B1B1E8C975700284AA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52B10B1A1E8C975700284AA6 /* Assets.xcassets */; };
 		52B10B1E1E8C975700284AA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52B10B1C1E8C975700284AA6 /* LaunchScreen.storyboard */; };
+		52B10B261E8C99C900284AA6 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 52B10B251E8C99C900284AA6 /* pokemon.csv */; };
+		52B10B291E8C9F3500284AA6 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B10B281E8C9F3500284AA6 /* Pokemon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		52B10B1A1E8C975700284AA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52B10B1D1E8C975700284AA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52B10B1F1E8C975700284AA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52B10B251E8C99C900284AA6 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
+		52B10B281E8C9F3500284AA6 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		52B10B121E8C975700284AA6 /* pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				52B10B271E8C9F2700284AA6 /* Model */,
 				52B10B131E8C975700284AA6 /* AppDelegate.swift */,
 				52B10B151E8C975700284AA6 /* ViewController.swift */,
 				52B10B171E8C975700284AA6 /* Main.storyboard */,
 				52B10B1A1E8C975700284AA6 /* Assets.xcassets */,
+				52B10B251E8C99C900284AA6 /* pokemon.csv */,
 				52B10B1C1E8C975700284AA6 /* LaunchScreen.storyboard */,
 				52B10B1F1E8C975700284AA6 /* Info.plist */,
 			);
 			path = pokedex;
+			sourceTree = "<group>";
+		};
+		52B10B271E8C9F2700284AA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52B10B281E8C9F3500284AA6 /* Pokemon.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +110,7 @@
 				TargetAttributes = {
 					52B10B0F1E8C975700284AA6 = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = 6W27TEN3TD;
+						DevelopmentTeam = 8U7BK3695T;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -126,6 +140,7 @@
 			files = (
 				52B10B1E1E8C975700284AA6 /* LaunchScreen.storyboard in Resources */,
 				52B10B1B1E8C975700284AA6 /* Assets.xcassets in Resources */,
+				52B10B261E8C99C900284AA6 /* pokemon.csv in Resources */,
 				52B10B191E8C975700284AA6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +154,7 @@
 			files = (
 				52B10B161E8C975700284AA6 /* ViewController.swift in Sources */,
 				52B10B141E8C975700284AA6 /* AppDelegate.swift in Sources */,
+				52B10B291E8C9F3500284AA6 /* Pokemon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +279,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6W27TEN3TD;
+				DEVELOPMENT_TEAM = 8U7BK3695T;
 				INFOPLIST_FILE = pokedex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.juniorsamaroo.pokedex;
@@ -276,7 +292,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6W27TEN3TD;
+				DEVELOPMENT_TEAM = 8U7BK3695T;
 				INFOPLIST_FILE = pokedex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.juniorsamaroo.pokedex;
