@@ -1,5 +1,5 @@
 ---
-name: Bug report
+name: test name 2
 about: Create a report to help us improve
 title: Test default title
 labels: ''
